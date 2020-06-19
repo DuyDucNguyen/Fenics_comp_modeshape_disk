@@ -2,9 +2,7 @@ import comp_modeshape_disk as cmd
 from comp_modeshape_disk.Classes.DiskMesh import DiskMesh
 from comp_modeshape_disk.Classes.Material import Material
 from comp_modeshape_disk.Classes.Simulation import Simulation
-import dolfin as df
-import matplotlib.pyplot as plt
-import math
+
 
 
 # TODO: use gmsh_api to generate 3D mesh
