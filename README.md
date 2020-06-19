@@ -1,9 +1,14 @@
 ### Introduction
 This package is made in order to provide a free tool to compute mode shapes and natural frequencies of disks with all kind of boundary conditions. 
 
-Examples: 
-
-<img src="Pictures/annular_disk_cc_mode10.gif" alt="3d_mode_cc" />
+### Examples: 
+<p align="center">
+    <img src="Pictures/annular_disk_cc_mode10.gif" alt="3d_mode_cc" width="40%"/>
+    <img src="Pictures/annular_disk_ff_mode10.gif" alt="3d_mode_ff" width="40%"/>
+    <img src="Pictures/annular_disk_cf_mode10.gif" alt="3d_mode_cf" width="40%"/>
+    <img src="Pictures/annular_disk_fc_mode10.gif" alt="3d_mode_fc" width="40%"/>
+    <p align="center">Modeshapes of 3D annular disk with clamped-clamped, free-free, clamped-free, free-clamped boundary conditions.</p>
+</p>
 
 ### Import Classes
 ```
