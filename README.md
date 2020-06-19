@@ -1,5 +1,8 @@
 ### Introduction
-This package is made in order to provide a free tool to compute mode shapes and natural frequencies of disks with all kind of boundary conditions. 
+This package is made in order to provide a free FEM tool to compute mode shapes and natural frequencies of disks with all kind of boundary conditions. In these following examples, the inner radius is marked as 1 and the outter radius is marked as 2. You can load your own mesh, but make sure that the boundaries are marked correctly. Please feel free to contact us for more detail. <br>
+**Contributors**: <br>
+Duy Duc NGUYEN, email: duyduc.nguyen@protonmail.com <br>
+Nhat Binh Trinh NGUYEN: email: nhatbinhtrinh@gmail.com
 
 ### Examples: 
 <p align="center">
@@ -91,9 +94,8 @@ for bc in ['CF', 'FF', 'CC', 'FC']:
 
 
 ### Install Fenics 
-If you are using Linux, you can intall Fenics following this [guidelines](https://fenicsproject.org/download/). 
+If you are using Linux, you can intall Fenics following this [guidelines](https://fenicsproject.org/download/). <br>
+If you are using Window, you can install [Docker Desktop](https://www.docker.com/products/docker-desktop) and download or make your own Fenics image following this [guidelines](https://fenics.readthedocs.io/projects/containers/en/latest/). <br>
+If you are using Window 10, you can install Window Linux Subsystem (WLS) and install Fenics to WLS as in Linux. <br>
 
-If you are using Window, you can install [Docker Desktop](https://www.docker.com/products/docker-desktop) and download or make your own Fenics image following this [guidelines](https://fenics.readthedocs.io/projects/containers/en/latest/). 
-
-If you are using Window 10, you can install Window Linux Subsystem (WLS) and install Fenics to WLS as in Linux. 
 
