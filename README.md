@@ -3,7 +3,7 @@ This package is made in order to provide a free tool to compute mode shapes and 
 
 Examples: 
 
-<img src=”Pictures/annular_disk_cc_mode10.gif” alt="3d_mode_cc" />
+<img src="Pictures/annular_disk_cc_mode10.gif" alt="3d_mode_cc" />
 
 ### Import Classes
 ```
