@@ -127,7 +127,7 @@ def comp_modeshape(mat_obj, mesh_obj, bc, save_path, neig):
             print("\nNumber of converged eigenvalues: {:3d}".format(conv))
             # print('\nNumber of iterations: {:3d}'.format(no_of_iterations))
 
-        get_mode_shape_and_frequency(
+        freqs = get_mode_shape_and_frequency(
             save_path,
             eigensolver,
             V,
@@ -143,6 +143,7 @@ def comp_modeshape(mat_obj, mesh_obj, bc, save_path, neig):
             m_form,
             k_form,
         )
+        return freqs
 
     def simulation_isotropic_ff(save_path, k_form, m_form, neig):
         df.File(save_path + "Marker_Functions/" + "cell_markers.pvd") << cell_markers
@@ -150,7 +151,7 @@ def comp_modeshape(mat_obj, mesh_obj, bc, save_path, neig):
         eigensolver, K, M = define_eigen_solver(k_form, l_form, m_form, [], "ff")
         eigensolver.solve(neig)
 
-        get_mode_shape_and_frequency(
+        freqs = get_mode_shape_and_frequency(
             save_path,
             eigensolver,
             V,
@@ -166,25 +167,27 @@ def comp_modeshape(mat_obj, mesh_obj, bc, save_path, neig):
             m_form,
             k_form,
         )
+        return freqs
 
 
     if bc == "FF":
         save_path_1 = save_path + "free_free/"
-        simulation_isotropic_ff(save_path_1, k_form, m_form, neig)
+        freqs = simulation_isotropic_ff(save_path_1, k_form, m_form, neig)
+        
 
     if bc == "CF":
         save_path_1 = save_path + "clamped_free/"
-        simulation_isotropic_c(save_path_1, dbc2, neig)
+        freqs = simulation_isotropic_c(save_path_1, dbc2, neig)
 
     if bc == "FC":
         save_path_1 = save_path + "free_clamped/"
-        simulation_isotropic_c(save_path_1, dbc1, neig)
+        freqs = simulation_isotropic_c(save_path_1, dbc1, neig)
 
     if bc == "CC":
         save_path_1 = save_path + "clamped_clamped/"
-        simulation_isotropic_c(save_path_1, dbc3, neig)
+        freqs = simulation_isotropic_c(save_path_1, dbc3, neig)
 
-    return 
+    return freqs
 
 
 

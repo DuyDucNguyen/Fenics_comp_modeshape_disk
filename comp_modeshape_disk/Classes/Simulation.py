@@ -22,5 +22,5 @@ class Simulation():
         self.neig = neig
 
     def run(self):
-        comp_modeshape(self.mat_obj, self.mesh_obj, self.bc, self.save_path, self.neig)
-        return
+        freq = comp_modeshape(self.mat_obj, self.mesh_obj, self.bc, self.save_path, self.neig)
+        return freq

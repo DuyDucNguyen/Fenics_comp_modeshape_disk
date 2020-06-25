@@ -46,6 +46,7 @@ def get_mode_shape_and_frequency(
     file.write("\n")
     
 
+    frequencies = []
     # Extraction
     for i in range(neig):
         # Extract eigenpair i-th
@@ -66,6 +67,8 @@ def get_mode_shape_and_frequency(
 
         # from ms to s
         freq = freq*1.0/convert_unit(1.0, t_unit, "s")
+
+        frequencies.append(freq.real)
 
         if mpi_rank == 0:
             print("{0:d}) frequency {1:8.5f} [Hz]".format(i, freq))
@@ -92,3 +95,4 @@ def get_mode_shape_and_frequency(
         file_results.write(eigenmode)
 
     file.close()
+    return frequencies
