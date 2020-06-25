@@ -31,3 +31,4 @@ Field[1].YMin = -Rext;
 Field[1].ZMax = h;
 Field[1].ZMin = 0;
 Background Field = 1;
+
