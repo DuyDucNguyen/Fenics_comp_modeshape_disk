@@ -159,11 +159,7 @@ sudo apt-get install --no-install-recommends fenics
 
 ## 👥 Authors & Contributors
 
-* **Duy Duc NGUYEN, Ph.D.** ([@DuyDucNguyen](https://github.com/DuyDucNguyen)) - Lead Developer & Computational Modeler  
-  Email: `duyduc.nguyen@protonmail.com`
-* **Nhat Binh Trinh NGUYEN** - Contributor  
-  Email: `nhatbinhtrinh@gmail.com`
-
+* **Duy Duc NGUYEN, Ph.D.** ([@DuyDucNguyen](https://github.com/DuyDucNguyen))
 ---
 
 ## 📄 License
